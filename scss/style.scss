@@ -3,11 +3,11 @@
 
 $font-primary: 'Poppins',Arial, sans-serif;
 
-$white: #fff;
+$white: var(--dark);
 $black: #000000;
 $darken: #232931;
 
-$primary: #ffbd39;
+$primary: var(--accent);
 $secondary: #a0f669;
 
 
@@ -1939,7 +1939,7 @@ textarea.form-control {
 	width:  100%;
 	height: 100%;
 	transform: none;
-	background-color: #fff;
+	background-color: var(--dark);
 	border-radius: 0;
 	box-shadow: none;
 }
