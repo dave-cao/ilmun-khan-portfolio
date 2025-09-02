@@ -17,9 +17,15 @@
 
 - Carousel not needed
 
+- Instead of "Hire Me" -> "Contact Me"
+- Instead of "My Works" -> "My Experience"
+
 
 ## About Me
 - New photo
+
+## Resume
+- Change "Resume" to "Experiences"
 
 
 
