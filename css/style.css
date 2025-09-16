@@ -8807,8 +8807,10 @@ h1, h2, h3, h4, h5,
   -ms-border-radius: 5px;
   border-radius: 5px; }
   .resume-wrap .date {
+    display: block;
     font-weight: 900;
-    font-size: 26px;
+    font-size: 16px;
+    padding-top: 10px;
     color: var(--accent); }
   .resume-wrap h2 {
     font-size: 26px; }
@@ -9685,3 +9687,33 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+  /* For Project Filtering */
+  /* Smooth hide/show; keeps layout snappy */
+  .project-card { transition: opacity .18s ease, transform .18s ease; }
+  .project-card.is-hidden { opacity: 0; pointer-events: none; transform: scale(.98); }
+  /* Make pills look more modern */
+  #projectFilters .nav-link {
+    color: #495057;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+  }
+
+  #projectFilters .nav-link:hover {
+    background-color: #e9ecef;
+    color: #0d6efd;
+    transform: translateY(-2px);
+  }
+
+  #projectFilters .nav-link.active {
+    background-color: #0d6efd;
+    color: #fff !important;
+    border-color: #0d6efd;
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+  }
+
+  .nav .nav-item{
+    margin: 5px;
+  }

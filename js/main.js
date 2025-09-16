@@ -190,7 +190,7 @@
 					  {
 					    number: num,
 					    numberStep: comma_separator_number_step
-					  }, 7000
+					  }, 6000
 					);
 				});
 				
@@ -275,3 +275,36 @@
 
 })(jQuery);
 
+// Filter Logic for Portfolio
+  (function ($) {
+    function applyFilter(filter) {
+      var $cards = $('#projects-grid .project-card');
+      if (filter === 'all') {
+        $cards.removeClass('is-hidden').fadeIn(120);
+        return;
+      }
+      $cards.each(function () {
+        var cats = ($(this).data('cat') || '').toString().split(/\s+/);
+        var show = cats.indexOf(filter) !== -1;
+        if (show) {
+          $(this).removeClass('is-hidden').fadeIn(120);
+        } else {
+          // use fadeOut only if currently visible to avoid layout thrash
+          if ($(this).is(':visible')) {
+            $(this).addClass('is-hidden').fadeOut(120);
+          } else {
+            $(this).addClass('is-hidden');
+          }
+        }
+      });
+    }
+
+    $(document).on('click', '#projectFilters .nav-link', function () {
+      $('#projectFilters .nav-link').removeClass('active').attr('aria-selected', 'false');
+      $(this).addClass('active').attr('aria-selected', 'true');
+      applyFilter($(this).data('filter'));
+    });
+
+    // initial state
+    applyFilter('all');
+  })(jQuery);
