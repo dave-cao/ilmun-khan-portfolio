@@ -22,129 +22,233 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
+	<!-- NAVBAR -->
+	<nav class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+			<div class="flex h-16 items-center justify-between">
+				<!-- Brand -->
+				<a href="#home-section"
+					class="text-xl font-semibold text-slate-800 tracking-tight hover:text-indigo-600 transition">
+					Ilmun
+				</a>
 
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">Ilmun</a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
+				<!-- Mobile menu button -->
+				<button id="nav-toggle" type="button"
+					class="lg:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+					<svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+					</svg>
+				</button>
 
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Experiences</span></a></li>
-					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
-					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Tools</span></a></li>
-					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
-					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-				</ul>
+				<!-- Nav Links -->
+				<div id="nav-menu" class="hidden lg:flex space-x-6">
+					<a href="#home-section" class="text-slate-700 hover:text-indigo-600 font-medium transition">Home</a>
+					<a href="#about-section"
+						class="text-slate-700 hover:text-indigo-600 font-medium transition">About</a>
+					<a href="#services-section"
+						class="text-slate-700 hover:text-indigo-600 font-medium transition">Services</a>
+					<a href="#resume-section"
+						class="text-slate-700 hover:text-indigo-600 font-medium transition">Experiences</a>
+					<a href="#skills-section"
+						class="text-slate-700 hover:text-indigo-600 font-medium transition">Tools</a>
+					<a href="#projects-section"
+						class="text-slate-700 hover:text-indigo-600 font-medium transition">Projects</a>
+					<a href="#blog-section" class="text-slate-700 hover:text-indigo-600 font-medium transition">My
+						Blog</a>
+					<a href="#contact-section"
+						class="text-slate-700 hover:text-indigo-600 font-medium transition">Contact</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Mobile Dropdown -->
+		<div id="nav-dropdown" class="hidden lg:hidden border-t border-slate-200 bg-white/95 backdrop-blur-md">
+			<div class="space-y-2 px-4 py-3">
+				<a href="#home-section" class="block text-slate-700 hover:text-indigo-600 font-medium">Home</a>
+				<a href="#about-section" class="block text-slate-700 hover:text-indigo-600 font-medium">About</a>
+				<a href="#services-section" class="block text-slate-700 hover:text-indigo-600 font-medium">Services</a>
+				<a href="#resume-section" class="block text-slate-700 hover:text-indigo-600 font-medium">Experiences</a>
+				<a href="#skills-section" class="block text-slate-700 hover:text-indigo-600 font-medium">Tools</a>
+				<a href="#projects-section" class="block text-slate-700 hover:text-indigo-600 font-medium">Projects</a>
+				<a href="#blog-section" class="block text-slate-700 hover:text-indigo-600 font-medium">My Blog</a>
+				<a href="#contact-section" class="block text-slate-700 hover:text-indigo-600 font-medium">Contact</a>
 			</div>
 		</div>
 	</nav>
-	<section id="home-section" class="hero">
-		<div class="home-slider  owl-carousel">
-			<div class="slider-item ">
-				<!-- <div class="overlay"></div> -->
-				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img" style="">
-							<div class="overlay"></div>
-						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>Ilmun Khan</span></h1>
-								<h2 class="mb-4">I do Ergonomics</h2>
-								<p><a href="#contact-section" class="btn btn-primary py-3 px-4">Contact Me</a> <a
-										href="#resume-section" class="btn btn-white btn-outline-white py-3 px-4">My
-										Experience</a></p>
+
+	<!-- Toggle Script -->
+	<script>
+		const navToggle = document.getElementById('nav-toggle');
+		const navMenu = document.getElementById('nav-menu');
+		const navDropdown = document.getElementById('nav-dropdown');
+
+		navToggle.addEventListener('click', () => {
+			navDropdown.classList.toggle('hidden');
+		});
+
+		// Optional: close dropdown when clicking a link
+		document.querySelectorAll('#nav-dropdown a').forEach(link =>
+			link.addEventListener('click', () => navDropdown.classList.add('hidden'))
+		);
+	</script>
+
+	<section id="home" class="relative isolate overflow-hidden bg-[#f8f9fa]">
+		<!-- subtle gradient / overlay -->
+		<div style="background-color: #f8f9fa !important;" class="absolute inset-0 -z-10"></div>
+		</div>
+
+		<!-- content -->
+		<div class=" mx-auto max-w-7xl px-6 py-24 sm:py-28 lg:py-32">
+			<div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
+				<!-- text section -->
+				<div class="lg:col-span-7">
+					<span
+						class="inline-flex items-center rounded-full bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-200">
+						Hello!
+					</span>
+
+					<h1 class="mt-4 text-4xl font-bold tracking-tight text-slate-800 sm:text-5xl md:text-6xl">
+						I'm <span style="color: #9BB8D1;">Ilmun Khan</span>
+					</h1>
+
+					<p class="mt-4 text-lg text-slate-600">
+						I do
+						<span class="relative inline-block align-baseline">
+							<span id="typewriter-target" class="font-semibold" style="color: #9BB8D1;"></span>
+							<span
+								class="ml-1 inline-block h-6 w-[2px] translate-y-1 bg-indigo-500 animate-pulse"></span>
+						</span>
+					</p>
+
+					<div class="mt-8 flex flex-wrap gap-3">
+						<a href="#contact-section"
+							class="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold text-white shadow hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+							style="background-color: #9BB8D1;">
+							Contact Me
+						</a>
+						<a href="#resume-section" style="color: #9BB8D1;"
+							class="inline-flex items-center justify-center rounded-lg border border-indigo-200 bg-white px-5 py-3 text-sm font-semibold text-indigo-700 hover:bg-indigo-50">
+							My Experience
+						</a>
+					</div>
+				</div>
+
+				<!-- illustration area -->
+				<!-- illustration area (carousel, lg+ only) -->
+				<div class="lg:col-span-5 hidden lg:block">
+					<div
+						class="relative aspect-[4/3] w-full overflow-hidden rounded-3xl border border-slate-200 bg-white p-1">
+						<figure id="hero-carousel"
+							class="relative h-full w-full rounded-2xl overflow-hidden bg-white/70 backdrop-blur-sm">
+							<!-- Slides -->
+							<img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=1600&auto=format&fit=crop"
+								alt="Workplace ergonomics"
+								class="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out opacity-100" />
+							<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop"
+								alt="Human factors collaboration"
+								class="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out opacity-0" />
+							<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop"
+								alt="Health & safety briefing"
+								class="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out opacity-0" />
+
+							<!-- Overlay content (optional) -->
+							<div
+								class="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent pointer-events-none">
 							</div>
-						</div>
+							<figcaption class="absolute bottom-3 left-3 right-3">
+								<div
+									class="inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1 text-xs font-medium text-slate-700 ring-1 ring-inset ring-slate-200">
+									Illustration
+									<span class="h-1 w-1 rounded-full bg-slate-400"></span>
+									Auto-flips every 4s
+								</div>
+							</figcaption>
+
+							<!-- Small progress dots -->
+							<div class="absolute bottom-3 right-3 flex gap-1.5">
+								<span class="h-1.5 w-1.5 rounded-full bg-slate-900/60 ring-1 ring-white/60"></span>
+								<span class="h-1.5 w-1.5 rounded-full bg-slate-900/20 ring-1 ring-white/60"></span>
+								<span class="h-1.5 w-1.5 rounded-full bg-slate-900/20 ring-1 ring-white/60"></span>
+							</div>
+						</figure>
 					</div>
 				</div>
 			</div>
 
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img" style="">
-							<div class="overlay"></div>
-						</div>
-						<div class="one-forth d-flex align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>Ilmun Khan</span></h1>
-								<h2 class="mb-4">I do Human Factors</h2>
-								<p><a href="#contact-section" class="btn btn-primary py-3 px-4">Contact Me</a> <a
-										href="#resume-section" class="btn btn-white btn-outline-white py-3 px-4">My
-										Experience</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
+			<!-- scroll hint -->
+			<div class="mt-12 flex justify-center">
+				<a href="#resume-section" class="group inline-flex items-center gap-2 text-sm hover:text-indigo-800">
+					<svg class="h-4 w-4 transition-transform group-hover:translate-y-0.5" viewBox="0 0 20 20"
+						fill="currentColor">
+						<path fill-rule="evenodd"
+							d="M10 3a1 1 0 011 1v9.586l3.293-3.293a1 1 0 111.414 1.414l-5.007 5.007a1 1 0 01-1.414 0L4.279 11.707a1 1 0 111.414-1.414L9 13.586V4a1 1 0 011-1z"
+							clip-rule="evenodd" />
+					</svg>
+					Explore my work
+				</a>
 			</div>
-
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img" style="">
-							<div class="overlay"></div>
-						</div>
-						<div class="one-forth d-flex align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>Ilmun Khan</span></h1>
-								<h2 class="mb-4">I do Health and Safety</h2>
-								<p><a href="#contact-section" class="btn btn-primary py-3 px-4">Contact Me</a> <a
-										href="#resume-section" class="btn btn-white btn-outline-white py-3 px-4">My
-										Experience</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img" style="">
-							<div class="overlay"></div>
-						</div>
-						<div class="one-forth d-flex align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>Ilmun Khan</span></h1>
-								<h2 class="mb-4">I do Worker Wellness</h2>
-								<p><a href="#contact-section" class="btn btn-primary py-3 px-4">Contact Me</a> <a
-										href="#resume-section" class="btn btn-white btn-outline-white py-3 px-4">My
-										Experience</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
 		</div>
 	</section>
+
+
+	<!-- TYPEWRITER SCRIPT -->
+	<script>
+		(function () {
+			const el = document.getElementById('typewriter-target');
+			const phrases = [
+				'Ergonomics',
+				'Human Factors',
+				'Health & Safety',
+				'Worker Wellness'
+			];
+
+			const typeSpeed = 70;
+			const eraseSpeed = 45;
+			const holdTime = 1100;
+			const betweenWords = 400;
+
+			let phraseIndex = 0;
+			let charIndex = 0;
+			let typing = true;
+
+			function tick() {
+				const current = phrases[phraseIndex];
+
+				if (typing) {
+					el.textContent = current.slice(0, charIndex + 1);
+					charIndex++;
+					if (charIndex === current.length) {
+						typing = false;
+						return setTimeout(tick, holdTime);
+					}
+					return setTimeout(tick, typeSpeed);
+				} else {
+					el.textContent = current.slice(0, charIndex - 1);
+					charIndex--;
+					if (charIndex === 0) {
+						typing = true;
+						phraseIndex = (phraseIndex + 1) % phrases.length;
+						return setTimeout(tick, betweenWords);
+					}
+					return setTimeout(tick, eraseSpeed);
+				}
+			}
+
+			const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+			if (prefersReduced) {
+				el.textContent = phrases[0];
+			} else {
+				tick();
+			}
+		})();
+	</script>
+
+
 
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
 		<div class="container">
@@ -189,6 +293,322 @@
 		</div>
 	</section>
 
+
+	<!-- CARDS GRID -->
+	<section>
+
+		<div class="row justify-content-center py-5 mt-5">
+			<div class="col-md-12 heading-section text-center ftco-animate">
+				<h1 class="big big-2">Services</h1>
+				<h2 class="mb-4">Services</h2>
+				<p>Here are the services I can provide to your company</p>
+			</div>
+		</div>
+		<div class="mx-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+			<!-- Card template:
+       Wrap: group/card relative, preserve-3d, perspective
+       Inner: rotates on hover/focus/tap
+  -->
+
+			<!-- Office Ergonomic Assessments (fixed) -->
+			<button type="button"
+				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+				aria-label="Flip card for Office Ergonomic Assessments">
+				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+              transition-transform duration-500 transform-gpu
+              [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
+              group-hover/card:[transform:rotateY(180deg)]
+              motion-reduce:transition-none">
+
+					<!-- FRONT -->
+					<div class="absolute inset-0 grid place-items-center p-6
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<div class="flex flex-col items-center text-center">
+							<svg class="h-10 w-10 text-indigo-600" viewBox="0 0 24 24" fill="none"
+								stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+									d="M3 4.5h18M3 9.75h18M6 9.75v9.75m12-9.75v9.75M9.75 19.5h4.5" />
+							</svg>
+							<h3 class="mt-3 text-sm font-semibold text-slate-800">
+								Office Ergonomic Assessments
+							</h3>
+						</div>
+					</div>
+
+					<!-- BACK -->
+					<div class="absolute inset-0 p-6
+                [transform:rotateY(180deg)]
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<!-- solid background (no transparency) so you don’t see through -->
+						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+							Workstation setup, posture coaching, and equipment recommendations to reduce discomfort and
+							improve productivity.
+						</div>
+					</div>
+
+				</div>
+			</button>
+
+			<!-- Industrial Ergonomic Assessments -->
+			<button type="button"
+				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+				aria-label="Flip card for Industrial Ergonomic Assessments">
+				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+              transition-transform duration-500 transform-gpu
+              [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
+              group-hover/card:[transform:rotateY(180deg)]">
+					<!-- Front -->
+					<div class="absolute inset-0 grid place-items-center p-6
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<div class="flex flex-col items-center text-center">
+							<svg class="h-10 w-10 text-indigo-600" viewBox="0 0 24 24" fill="none"
+								stroke="currentColor">
+								<path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+									d="M21 21l-5.2-5.2M11 6a5 5 0 017.9-3.9L16 6l2 2 3.9-2.9A5 5 0 0111 6zm0 0a5 5 0 105 5" />
+							</svg>
+							<h3 class="mt-3 text-sm font-semibold text-slate-800">Industrial Ergonomic Assessments</h3>
+						</div>
+					</div>
+					<!-- Back -->
+					<div class="absolute inset-0 p-6
+                [transform:rotateY(180deg)]
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+							Task analysis, lift/lower optimization, reach and force reduction, workflow and tools
+							redesign.
+						</div>
+					</div>
+				</div>
+			</button>
+
+			<!-- Job Demands Analyses (JDA) -->
+			<button type="button"
+				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+				aria-label="Flip card for Job Demands Analyses">
+				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+              transition-transform duration-500 transform-gpu
+              [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
+              group-hover/card:[transform:rotateY(180deg)]">
+					<div class="absolute inset-0 grid place-items-center p-6
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<div class="flex flex-col items-center text-center">
+							<svg class="h-10 w-10 text-indigo-600" viewBox="0 0 24 24" fill="none"
+								stroke="currentColor">
+								<path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+									d="M9 3h6a2 2 0 012 2h-2a2 2 0 00-2-2H9a2 2 0 00-2 2H5a2 2 0 012-2zm0 0v2h6V3M7 7h10a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V9a2 2 0 012-2zm3 6l2 2 4-4" />
+							</svg>
+							<h3 class="mt-3 text-sm font-semibold text-slate-800">Job Demands Analyses (JDA)</h3>
+						</div>
+					</div>
+					<div class="absolute inset-0 p-6
+                [transform:rotateY(180deg)]
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+							Objective documentation of physical/cognitive demands to support recruitment, RTW, and
+							accommodations.
+						</div>
+					</div>
+				</div>
+			</button>
+
+			<!-- Return-To-Work Planning Support -->
+			<button type="button"
+				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+				aria-label="Flip card for Return-To-Work Planning Support">
+				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+              transition-transform duration-500 transform-gpu
+              [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
+              group-hover/card:[transform:rotateY(180deg)]">
+					<div class="absolute inset-0 grid place-items-center p-6
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<div class="flex flex-col items-center text-center">
+							<svg class="h-10 w-10 text-indigo-600" viewBox="0 0 24 24" fill="none"
+								stroke="currentColor">
+								<path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+									d="M3 12a9 9 0 1018 0M3 12h6m6 0h6M9 12l3-3m0 0l3 3m-3-3v12" />
+							</svg>
+							<h3 class="mt-3 text-sm font-semibold text-slate-800">Return-To-Work Planning Support</h3>
+						</div>
+					</div>
+					<div class="absolute inset-0 p-6
+                [transform:rotateY(180deg)]
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+							Graduated duties, accommodation strategies, and coordination with stakeholders to enable
+							safe,
+							timely RTW.
+						</div>
+					</div>
+				</div>
+			</button>
+
+			<!-- Workplace Design Consultation -->
+			<button type="button"
+				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+				aria-label="Flip card for Workplace Design Consultation">
+				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+              transition-transform duration-500 transform-gpu
+              [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
+              group-hover/card:[transform:rotateY(180deg)]">
+					<div class="absolute inset-0 grid place-items-center p-6
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<div class="flex flex-col items-center text-center">
+							<svg class="h-10 w-10 text-indigo-600" viewBox="0 0 24 24" fill="none"
+								stroke="currentColor">
+								<path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+									d="M3 21h18M6 21V5a2 2 0 012-2h8a2 2 0 012 2v16M9 8h6m-6 4h6m-6 4h6" />
+							</svg>
+							<h3 class="mt-3 text-sm font-semibold text-slate-800">Workplace Design Consultation</h3>
+						</div>
+					</div>
+					<div class="absolute inset-0 p-6
+                [transform:rotateY(180deg)]
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+							Layout reviews, workflow mapping, and equipment/spec guidance for safer, more efficient
+							spaces.
+						</div>
+					</div>
+				</div>
+			</button>
+
+			<!-- Human-Centered Design Consultation -->
+			<button type="button"
+				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+				aria-label="Flip card for Human-Centered Design Consultation">
+				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+              transition-transform duration-500 transform-gpu
+              [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
+              group-hover/card:[transform:rotateY(180deg)]">
+					<div class="absolute inset-0 grid place-items-center p-6
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<div class="flex flex-col items-center text-center">
+							<svg class="h-10 w-10 text-indigo-600" viewBox="0 0 24 24" fill="none"
+								stroke="currentColor">
+								<path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+									d="M15 19a6 6 0 10-6 0M12 7a4 4 0 110-8 4 4 0 010 8z" />
+							</svg>
+							<h3 class="mt-3 text-sm font-semibold text-slate-800">Human-Centered Design Consultation
+							</h3>
+						</div>
+					</div>
+					<div class="absolute inset-0 p-6
+                [transform:rotateY(180deg)]
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+							Stakeholder interviews, personas, and iterative prototyping to ensure fit between users,
+							tasks,
+							and tools.
+						</div>
+					</div>
+				</div>
+			</button>
+
+			<!-- Usability Testing -->
+			<button type="button"
+				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+				aria-label="Flip card for Usability Testing">
+				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+              transition-transform duration-500 transform-gpu
+              [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
+              group-hover/card:[transform:rotateY(180deg)]">
+					<div class="absolute inset-0 grid place-items-center p-6
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<div class="flex flex-col items-center text-center">
+							<svg class="h-10 w-10 text-indigo-600" viewBox="0 0 24 24" fill="none"
+								stroke="currentColor">
+								<path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+									d="M6 4l12 6-5 2-2 5L6 4zM13 13l5 5" />
+							</svg>
+							<h3 class="mt-3 text-sm font-semibold text-slate-800">Usability Testing</h3>
+						</div>
+					</div>
+					<div class="absolute inset-0 p-6
+                [transform:rotateY(180deg)]
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+							Task-based evaluations, think-alouds, and metrics (SUS, completion time, error rate) to
+							validate
+							design choices.
+						</div>
+					</div>
+				</div>
+			</button>
+
+			<!-- Cognitive Task Analysis -->
+			<button type="button"
+				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+				aria-label="Flip card for Cognitive Task Analysis">
+				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+              transition-transform duration-500 transform-gpu
+              [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
+              group-hover/card:[transform:rotateY(180deg)]">
+					<div class="absolute inset-0 grid place-items-center p-6
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<div class="flex flex-col items-center text-center">
+							<svg class="h-10 w-10 text-indigo-600" viewBox="0 0 24 24" fill="none"
+								stroke="currentColor">
+								<path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+									d="M12 2a7 7 0 00-4 12.9V18a2 2 0 002 2h4a2 2 0 002-2v-3.1A7 7 0 0012 2zm-2 18h4" />
+							</svg>
+							<h3 class="mt-3 text-sm font-semibold text-slate-800">Cognitive Task Analysis</h3>
+						</div>
+					</div>
+					<div class="absolute inset-0 p-6
+                [transform:rotateY(180deg)]
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+							Decompose decision steps, information needs, and error traps to improve procedures and
+							interfaces.
+						</div>
+					</div>
+				</div>
+			</button>
+
+			<!-- Training & Workshops -->
+			<button type="button"
+				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+				aria-label="Flip card for Training & Workshops">
+				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+              transition-transform duration-500 transform-gpu
+              [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
+              group-hover/card:[transform:rotateY(180deg)]">
+					<div class="absolute inset-0 grid place-items-center p-6
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<div class="flex flex-col items-center text-center">
+							<svg class="h-10 w-10 text-indigo-600" viewBox="0 0 24 24" fill="none"
+								stroke="currentColor">
+								<path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+									d="M3 4h18M12 4v10m-7 0h14M8 14v4m4-4v4m4-4v4" />
+							</svg>
+							<h3 class="mt-3 text-sm font-semibold text-slate-800">Training & Workshops</h3>
+						</div>
+					</div>
+					<div class="absolute inset-0 p-6
+                [transform:rotateY(180deg)]
+                [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
+						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+							Interactive sessions for office/industrial ergonomics, safe lifting, micro-breaks, and
+							behavior
+							change.
+						</div>
+					</div>
+				</div>
+			</button>
+		</div>
+	</section>
+	<script>
+		// Enable tap/keyboard flip
+		document.querySelectorAll('.group\\/card').forEach(card => {
+			const inner = card.querySelector('.card-inner');
+			const toggle = () => inner.classList.toggle('!rotate-y-180');
+			card.addEventListener('click', toggle);
+			card.addEventListener('keyup', (e) => { if (e.key === 'Enter' || e.key === ' ') toggle(); });
+		});
+	</script>
+
+
+
 	<section class="ftco-section ftco-no-pb" id="resume-section">
 		<div class="container">
 			<div class="row justify-content-center pb-5">
@@ -200,26 +620,38 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<h2>Ergonomist</h2>
+						<h2 class="experience-title">Ergonomist</h2>
 						<span class="position">The Workers Compensation Board of Alberta</span>
 						<span class="date">2025 - Present</span>
-						<p class="mt-4">This is a short description at the college...</p>
+						<p class="mt-4">
+							I conduct ergonomic assessments and perform both physical and cognitive demands analyses to
+							support safe and sustainable work practices. I also deliver engaging office and industrial
+							workshops, equipping companies with practical strategies to reduce risk. My focus is on
+							preventing injuries and improving worker well-being across Alberta.
+						</p>
 					</div>
 					<div class="resume-wrap ftco-animate">
 						<h2>Ergonomist Intern</h2>
 						<span class="position">EWI Works</span>
 						<span class="date">May 2025 - July 2025</span>
-						<p class="mt-4">A small river named Duden flows by their place and supplies it with the
-							necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly
-							into your mouth.</p>
+						<p class="mt-4">
+							I helped organizations improve worker health and safety through ergonomic assessments in
+							office, vehicle, and industrial environments. I also supported research into innovative
+							ergonomic tools, bringing forward practical solutions that reduce injuries and enhance
+							workplace performance.
+						</p>
 					</div>
 					<div class="resume-wrap ftco-animate">
 						<h2>Internal Ergonomist</h2>
 						<span class="position">The Workers Compensation Board of Alberta</span>
 						<span class="date">2022-2025</span>
-						<p class="mt-4">A small river named Duden flows by their place and supplies it with the
-							necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly
-							into your mouth.</p>
+						<p class="mt-4">
+							I provided ergonomic assessments and recommendations to support injured workers in safely
+							returning to their jobs. I scored above 94% on injury prevention audits in consecutive
+							years. I collaborated with employers, healthcare providers, and case managers to identify
+							workplace risks, implement practical solutions, and promote long-term recovery and injury
+							prevention.
+						</p>
 					</div>
 				</div>
 
@@ -228,25 +660,33 @@
 						<h2>Ergonomic Consultant</h2>
 						<span class="position">Contractor</span>
 						<span class="date">2025 - Present</span>
-						<p class="mt-4">A small river named Duden flows by their place and supplies it with the
-							necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly
-							into your mouth.</p>
+						<p class="mt-4">
+							I conducted ergonomic assessments for employers to prevent injuries and delivered
+							training/workshop sessions to employees to promote awareness.
+						</p>
 					</div>
 					<div class="resume-wrap ftco-animate">
 						<h2>Ergonomics Student</h2>
 						<span class="position">Advanced Ergonomics Studies - Fanshaw College</span>
 						<span class="date">2024 - 2025</span>
-						<p class="mt-4">A small river named Duden flows by their place and supplies it with the
-							necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly
-							into your mouth.</p>
+						<p class="mt-4">
+							I specialized in ergonomics, human factors, and health and safety, completing hands-on
+							projects such as evaluating a passive exoskeleton for reducing back strain, designing safer
+							roadway signage, creating user friendly movie streaming app designs and evaluating
+							compliance of work to regulations. These experiences strengthened my ability to apply
+							research and design principles to improve workplace safety and performance.
+						</p>
 					</div>
 					<div class="resume-wrap ftco-animate">
 						<h2>Bachelor of Science in Kinesiology</h2>
 						<span class="position">University of Alberta</span>
 						<span class="date">2018 - 2022</span>
-						<p class="mt-4">A small river named Duden flows by their place and supplies it with the
-							necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly
-							into your mouth.</p>
+						<p class="mt-4">
+							I earned my Bachelor of Science in Kinesiology, where I gained a strong foundation in human
+							movement, injury prevention, and rehabilitation. I worked with collegiate athletes, kids,
+							and the general population to support recovery and performance, building skills that I now
+							apply to workplace health and ergonomics.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -254,114 +694,6 @@
 				<div class="col-md-6 text-center ftco-animate">
 					<p><a href="./public/Ergonomist CV - Ilmun Khan.pdf" download="Ergonomist CV - Ilmun Khan.pdf"
 							class="btn btn-primary py-3 px-3">Download CV</a></p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section" id="services-section">
-		<div class="container">
-			<div class="row justify-content-center py-5 mt-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Services</h1>
-					<h2 class="mb-4">Services</h2>
-					<p>Here are the services I can provide to your company</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="flaticon-analysis"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Office Ergonomic Assessments</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="flaticon-flasks"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Industrial Ergonomic Assessments</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="flaticon-ideas"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Job Demands Analyses (JDA)</h3>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="flaticon-analysis"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Return-To-Work Planning Support</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="flaticon-flasks"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Workplace Design Consultation</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="flaticon-ideas"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Human-Centered Design Consultation</h3>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="flaticon-ideas"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Usability Testing</h3>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="flaticon-ideas"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Cognitive Task Analysis</h3>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="flaticon-ideas"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Training & Workshops</h3>
-						</div>
-					</a>
 				</div>
 			</div>
 		</div>
@@ -384,7 +716,7 @@
 						<div class="progress">
 							<div class="progress-bar color-1" role="progressbar" aria-valuenow="90" aria-valuemin="0"
 								aria-valuemax="100" style="width:95%">
-								<span>95%</span>
+								<span class="!text-black">95%</span>
 							</div>
 						</div>
 					</div>
@@ -395,7 +727,7 @@
 						<div class="progress">
 							<div class="progress-bar color-2" role="progressbar" aria-valuenow="85" aria-valuemin="0"
 								aria-valuemax="100" style="width:80%">
-								<span>80%</span>
+								<span class="!text-black">80%</span>
 							</div>
 						</div>
 					</div>
@@ -406,7 +738,7 @@
 						<div class="progress">
 							<div class="progress-bar color-3" role="progressbar" aria-valuenow="95" aria-valuemin="0"
 								aria-valuemax="100" style="width:85%">
-								<span>85%</span>
+								<span class="!text-black">85%</span>
 							</div>
 						</div>
 					</div>
@@ -417,7 +749,7 @@
 						<div class="progress">
 							<div class="progress-bar color-4" role="progressbar" aria-valuenow="90" aria-valuemin="0"
 								aria-valuemax="100" style="width:75%">
-								<span>75%</span>
+								<span class="!text-black">75%</span>
 							</div>
 						</div>
 					</div>
