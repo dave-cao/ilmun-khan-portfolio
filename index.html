@@ -229,270 +229,275 @@
 
 
 	<!-- CARDS GRID -->
-	<section>
+	<section class="w-full">
+		<div class="max-w-7xl mx-auto">
 
-		<div class="row justify-content-center py-5 mt-5">
-			<div class="col-md-12 heading-section text-center ftco-animate">
-				<h1 class="big big-2">Services</h1>
-				<h2 class="mb-4">Services</h2>
-				<p>Here are the services I can provide to your company</p>
+			<div class="row justify-content-center py-5 mt-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Services</h1>
+					<h2 class="mb-4">Services</h2>
+					<p>Here are the services I can provide to your company</p>
+				</div>
 			</div>
-		</div>
-		<div class="mx-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-			<!-- Card template:
+			<div class="mx-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+				<!-- Card template:
        Wrap: group/card relative, preserve-3d, perspective
        Inner: rotates on hover/focus/tap
   -->
 
-			<!-- Office Ergonomic Assessments (fixed) -->
-			<button type="button"
-				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
-				aria-label="Flip card for Office Ergonomic Assessments">
-				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+				<!-- Office Ergonomic Assessments (fixed) -->
+				<button type="button"
+					class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+					aria-label="Flip card for Office Ergonomic Assessments">
+					<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
               transition-transform duration-500 transform-gpu
               [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
               group-hover/card:[transform:rotateY(180deg)]
               motion-reduce:transition-none">
 
-					<!-- FRONT -->
-					<div class="absolute inset-0 grid place-items-center p-6
+						<!-- FRONT -->
+						<div class="absolute inset-0 grid place-items-center p-6
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<div class="flex flex-col items-center text-center">
-							<img src="images/Office ergonomic assessments.png" width="80" />
-							<h3 class="mt-3 text-sm font-semibold text-slate-800">
-								Office Ergonomic Assessments
-							</h3>
+							<div class="flex flex-col items-center text-center">
+								<img src="images/Office ergonomic assessments.png" width="80" />
+								<h3 class="mt-3 text-sm font-semibold text-slate-800">
+									Office Ergonomic Assessments
+								</h3>
+							</div>
 						</div>
-					</div>
 
-					<!-- BACK -->
-					<div class="absolute inset-0 p-6
+						<!-- BACK -->
+						<div class="absolute inset-0 p-6
                 [transform:rotateY(180deg)]
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<!-- solid background (no transparency) so you don’t see through -->
-						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
-							Workstation setup, posture coaching, and equipment recommendations to reduce discomfort and
-							improve productivity.
+							<!-- solid background (no transparency) so you don’t see through -->
+							<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+								Workstation setup, posture coaching, and equipment recommendations to reduce discomfort
+								and
+								improve productivity.
+							</div>
 						</div>
+
 					</div>
+				</button>
 
-				</div>
-			</button>
-
-			<!-- Industrial Ergonomic Assessments -->
-			<button type="button"
-				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
-				aria-label="Flip card for Industrial Ergonomic Assessments">
-				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+				<!-- Industrial Ergonomic Assessments -->
+				<button type="button"
+					class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+					aria-label="Flip card for Industrial Ergonomic Assessments">
+					<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
               transition-transform duration-500 transform-gpu
               [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
               group-hover/card:[transform:rotateY(180deg)]">
-					<!-- Front -->
-					<div class="absolute inset-0 grid place-items-center p-6
+						<!-- Front -->
+						<div class="absolute inset-0 grid place-items-center p-6
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<div class="flex flex-col items-center text-center">
-							<img src="images/Industrial ergonomics assessments.png" width="80" />
-							<h3 class="mt-3 text-sm font-semibold text-slate-800">Industrial Ergonomic Assessments</h3>
+							<div class="flex flex-col items-center text-center">
+								<img src="images/Industrial ergonomics assessments.png" width="80" />
+								<h3 class="mt-3 text-sm font-semibold text-slate-800">Industrial Ergonomic Assessments
+								</h3>
+							</div>
 						</div>
-					</div>
-					<!-- Back -->
-					<div class="absolute inset-0 p-6
+						<!-- Back -->
+						<div class="absolute inset-0 p-6
                 [transform:rotateY(180deg)]
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
-							Task analysis, lift/lower optimization, reach and force reduction, workflow and tools
-							redesign.
+							<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+								Task analysis, lift/lower optimization, reach and force reduction, workflow and tools
+								redesign.
+							</div>
 						</div>
 					</div>
-				</div>
-			</button>
+				</button>
 
-			<!-- Job Demands Analyses (JDA) -->
-			<button type="button"
-				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
-				aria-label="Flip card for Job Demands Analyses">
-				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+				<!-- Job Demands Analyses (JDA) -->
+				<button type="button"
+					class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+					aria-label="Flip card for Job Demands Analyses">
+					<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
               transition-transform duration-500 transform-gpu
               [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
               group-hover/card:[transform:rotateY(180deg)]">
-					<div class="absolute inset-0 grid place-items-center p-6
+						<div class="absolute inset-0 grid place-items-center p-6
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<div class="flex flex-col items-center text-center">
-							<img src="images/Job Demands Analyses.png" width="80" />
-							<h3 class="mt-3 text-sm font-semibold text-slate-800">Job Demands Analyses (JDA)</h3>
+							<div class="flex flex-col items-center text-center">
+								<img src="images/Job Demands Analyses.png" width="80" />
+								<h3 class="mt-3 text-sm font-semibold text-slate-800">Job Demands Analyses (JDA)</h3>
+							</div>
 						</div>
-					</div>
-					<div class="absolute inset-0 p-6
+						<div class="absolute inset-0 p-6
                 [transform:rotateY(180deg)]
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
-							Objective documentation of physical/cognitive demands to support recruitment, RTW, and
-							accommodations.
+							<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+								Objective documentation of physical/cognitive demands to support recruitment, RTW, and
+								accommodations.
+							</div>
 						</div>
 					</div>
-				</div>
-			</button>
+				</button>
 
-			<!-- Return-To-Work Planning Support -->
-			<button type="button"
-				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
-				aria-label="Flip card for Return-To-Work Planning Support">
-				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+				<!-- Return-To-Work Planning Support -->
+				<button type="button"
+					class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+					aria-label="Flip card for Return-To-Work Planning Support">
+					<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
               transition-transform duration-500 transform-gpu
               [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
               group-hover/card:[transform:rotateY(180deg)]">
-					<div class="absolute inset-0 grid place-items-center p-6
+						<div class="absolute inset-0 grid place-items-center p-6
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<div class="flex flex-col items-center text-center">
-							<img src="images/Return-to-work planning support.png" width="80" />
-							<h3 class="mt-3 text-sm font-semibold text-slate-800">Return-To-Work Planning Support</h3>
+							<div class="flex flex-col items-center text-center">
+								<img src="images/Return-to-work planning support.png" width="80" />
+								<h3 class="mt-3 text-sm font-semibold text-slate-800">Return-To-Work Planning Support
+								</h3>
+							</div>
 						</div>
-					</div>
-					<div class="absolute inset-0 p-6
+						<div class="absolute inset-0 p-6
                 [transform:rotateY(180deg)]
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
-							Graduated duties, accommodation strategies, and coordination with stakeholders to enable
-							safe,
-							timely RTW.
+							<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+								Graduated duties, accommodation strategies, and coordination with stakeholders to enable
+								safe,
+								timely RTW.
+							</div>
 						</div>
 					</div>
-				</div>
-			</button>
+				</button>
 
-			<!-- Workplace Design Consultation -->
-			<button type="button"
-				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
-				aria-label="Flip card for Workplace Design Consultation">
-				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+				<!-- Workplace Design Consultation -->
+				<button type="button"
+					class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+					aria-label="Flip card for Workplace Design Consultation">
+					<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
               transition-transform duration-500 transform-gpu
               [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
               group-hover/card:[transform:rotateY(180deg)]">
-					<div class="absolute inset-0 grid place-items-center p-6
+						<div class="absolute inset-0 grid place-items-center p-6
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<div class="flex flex-col items-center text-center">
-							<img src="images/Workplace design consultation.png" width="80" />
-							<h3 class="mt-3 text-sm font-semibold text-slate-800">Workplace Design Consultation</h3>
+							<div class="flex flex-col items-center text-center">
+								<img src="images/Workplace design consultation.png" width="80" />
+								<h3 class="mt-3 text-sm font-semibold text-slate-800">Workplace Design Consultation</h3>
+							</div>
 						</div>
-					</div>
-					<div class="absolute inset-0 p-6
+						<div class="absolute inset-0 p-6
                 [transform:rotateY(180deg)]
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
-							Layout reviews, workflow mapping, and equipment/spec guidance for safer, more efficient
-							spaces.
+							<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+								Layout reviews, workflow mapping, and equipment/spec guidance for safer, more efficient
+								spaces.
+							</div>
 						</div>
 					</div>
-				</div>
-			</button>
+				</button>
 
-			<!-- Human-Centered Design Consultation -->
-			<button type="button"
-				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
-				aria-label="Flip card for Human-Centered Design Consultation">
-				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+				<!-- Human-Centered Design Consultation -->
+				<button type="button"
+					class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+					aria-label="Flip card for Human-Centered Design Consultation">
+					<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
               transition-transform duration-500 transform-gpu
               [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
               group-hover/card:[transform:rotateY(180deg)]">
-					<div class="absolute inset-0 grid place-items-center p-6
+						<div class="absolute inset-0 grid place-items-center p-6
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<div class="flex flex-col items-center text-center">
-							<img src="images/Human centered Design Consultation.png" width="80" />
-							<h3 class="mt-3 text-sm font-semibold text-slate-800">Human-Centered Design Consultation
-							</h3>
+							<div class="flex flex-col items-center text-center">
+								<img src="images/Human centered Design Consultation.png" width="80" />
+								<h3 class="mt-3 text-sm font-semibold text-slate-800">Human-Centered Design Consultation
+								</h3>
+							</div>
 						</div>
-					</div>
-					<div class="absolute inset-0 p-6
+						<div class="absolute inset-0 p-6
                 [transform:rotateY(180deg)]
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
-							Stakeholder interviews, personas, and iterative prototyping to ensure fit between users,
-							tasks,
-							and tools.
+							<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+								Stakeholder interviews, personas, and iterative prototyping to ensure fit between users,
+								tasks,
+								and tools.
+							</div>
 						</div>
 					</div>
-				</div>
-			</button>
+				</button>
 
-			<!-- Usability Testing -->
-			<button type="button"
-				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
-				aria-label="Flip card for Usability Testing">
-				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+				<!-- Usability Testing -->
+				<button type="button"
+					class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+					aria-label="Flip card for Usability Testing">
+					<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
               transition-transform duration-500 transform-gpu
               [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
               group-hover/card:[transform:rotateY(180deg)]">
-					<div class="absolute inset-0 grid place-items-center p-6
+						<div class="absolute inset-0 grid place-items-center p-6
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<div class="flex flex-col items-center text-center">
-							<img src="images/Usability Testing.png" width="80" />
-							<h3 class="mt-3 text-sm font-semibold text-slate-800">Usability Testing</h3>
+							<div class="flex flex-col items-center text-center">
+								<img src="images/Usability Testing.png" width="80" />
+								<h3 class="mt-3 text-sm font-semibold text-slate-800">Usability Testing</h3>
+							</div>
 						</div>
-					</div>
-					<div class="absolute inset-0 p-6
+						<div class="absolute inset-0 p-6
                 [transform:rotateY(180deg)]
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
-							Task-based evaluations, think-alouds, and metrics (SUS, completion time, error rate) to
-							validate
-							design choices.
+							<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+								Task-based evaluations, think-alouds, and metrics (SUS, completion time, error rate) to
+								validate
+								design choices.
+							</div>
 						</div>
 					</div>
-				</div>
-			</button>
+				</button>
 
-			<!-- Cognitive Task Analysis -->
-			<button type="button"
-				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
-				aria-label="Flip card for Cognitive Task Analysis">
-				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+				<!-- Cognitive Task Analysis -->
+				<button type="button"
+					class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+					aria-label="Flip card for Cognitive Task Analysis">
+					<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
               transition-transform duration-500 transform-gpu
               [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
               group-hover/card:[transform:rotateY(180deg)]">
-					<div class="absolute inset-0 grid place-items-center p-6
+						<div class="absolute inset-0 grid place-items-center p-6
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<div class="flex flex-col items-center text-center">
-							<img src="images/Cognitive Task Analysis.png" width="80" />
-							<h3 class="mt-3 text-sm font-semibold text-slate-800">Cognitive Task Analysis</h3>
+							<div class="flex flex-col items-center text-center">
+								<img src="images/Cognitive Task Analysis.png" width="80" />
+								<h3 class="mt-3 text-sm font-semibold text-slate-800">Cognitive Task Analysis</h3>
+							</div>
 						</div>
-					</div>
-					<div class="absolute inset-0 p-6
+						<div class="absolute inset-0 p-6
                 [transform:rotateY(180deg)]
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
-							Decompose decision steps, information needs, and error traps to improve procedures and
-							interfaces.
+							<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+								Decompose decision steps, information needs, and error traps to improve procedures and
+								interfaces.
+							</div>
 						</div>
 					</div>
-				</div>
-			</button>
+				</button>
 
-			<!-- Training & Workshops -->
-			<button type="button"
-				class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
-				aria-label="Flip card for Training & Workshops">
-				<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
+				<!-- Training & Workshops -->
+				<button type="button"
+					class="group/card relative h-56 w-full [perspective:1000px] [-webkit-perspective:1000px] focus:outline-none"
+					aria-label="Flip card for Training & Workshops">
+					<div class="card-inner relative h-full w-full rounded-2xl border border-slate-200 bg-white shadow-sm
               transition-transform duration-500 transform-gpu
               [transform-style:preserve-3d] [-webkit-transform-style:preserve-3d]
               group-hover/card:[transform:rotateY(180deg)]">
-					<div class="absolute inset-0 grid place-items-center p-6
+						<div class="absolute inset-0 grid place-items-center p-6
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<div class="flex flex-col items-center text-center">
-							<img src="images/Training and Workshops.png" width="80" />
-							<h3 class="mt-3 text-sm font-semibold text-slate-800">Training & Workshops</h3>
+							<div class="flex flex-col items-center text-center">
+								<img src="images/Training and Workshops.png" width="80" />
+								<h3 class="mt-3 text-sm font-semibold text-slate-800">Training & Workshops</h3>
+							</div>
 						</div>
-					</div>
-					<div class="absolute inset-0 p-6
+						<div class="absolute inset-0 p-6
                 [transform:rotateY(180deg)]
                 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-						<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
-							Interactive sessions for office/industrial ergonomics, safe lifting, micro-breaks, and
-							behavior
-							change.
+							<div class="h-full rounded-2xl bg-indigo-50 p-4 text-slate-700">
+								Interactive sessions for office/industrial ergonomics, safe lifting, micro-breaks, and
+								behavior
+								change.
+							</div>
 						</div>
 					</div>
-				</div>
-			</button>
+				</button>
+			</div>
 		</div>
 	</section>
 	<script>
